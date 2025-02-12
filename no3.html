@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="tenor-gif-embed"
+             data-postid="7277165444504831397"
+             data-share-method="host"
+             data-aspect-ratio="0.979339"
+             data-width="100%">
+            <a href="https://tenor.com/view/cat-sad-gif-7277165444504831397">Cat Sad Meme</a> from
+            <a href="https://tenor.com/search/cat-memes">Cat Memes</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>Fine...kalau betul x nak hm:(</h1>
+        <p>Tekan lah No tu lagi sekali kalau x nak :(</p>
+
+        <div class="btn">
+            <a href="yes.html">Yes</a>
+            <a href="#" id="noButton">No</a> <!-- Changed href="" to href="#" -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("noButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Stop the link from refreshing the page
+
+            const button = this;
+            const newX = Math.random() * (window.innerWidth - button.clientWidth);
+            const newY = Math.random() * (window.innerHeight - button.clientHeight);
+
+            button.style.position = "absolute";
+            button.style.left = `${newX}px`;
+            button.style.top = `${newY}px`;
+        });
+    </script>
+
+</body>
+</html>
